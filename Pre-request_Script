@@ -1,6 +1,6 @@
 var client_id = pm.environment.get("client_id");
 var client_secret = pm.environment.get("client_secret");
-var tenant = pm.environment.get("tenant")
+var tenant = pm.environment.get("tenant");
 
 
 pm.sendRequest({
@@ -14,7 +14,7 @@ pm.sendRequest({
           formdata: [
             {key: "client_id", value: client_id},
             {key: "client_secret", value: client_secret},
-            {key: "resource", value: "https://graph.windows.net/"},
+            {key: "resource", value: "https://management.azure.com/"},
             {key: "grant_type", value: "client_credentials"},
             
         ]
